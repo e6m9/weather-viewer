@@ -13,20 +13,26 @@
     <title>The Weather Viewer</title>
 </head>
 
-<body>
-    <header>
-        <h1 style="text-align: center">The Weather Viewer</h1>
+<body class="container">
+    <header class="text-center">
+        <h1>The Weather Viewer</h1>
     </header>
-    <main>
-        <div id="searchBox">
-            <h3>Search a City:</h3>
-            <input id="searchFld" placeholder="search here"></input>
-            <button id="searchBtn">SEARCH</button>
-            <div id="searchHistory"></div>
+    <main class="row">
+        <div class="col">
+            <div id="searchBox">
+                <h3>Search a City:</h3>
+                <input class="form-control w-100" id="searchFld" placeholder="search here">
+                <button class="btn btn-primary mt-2 btn-block w-100" id="searchBtn">SEARCH</button>
+                <div id="searchHistory"></div>
+            </div>
         </div>
-        <div id="resultsBox">
-            <div id="textBox"></div>
-            <div id="forecastBox"></div>
+        <div class="col-md-9">
+            <div id="resultsBox">
+                <div id="textBox"></div>
+            </div>
+            <div id="forecastBox" class="mt-4">
+                <div class="row" id="forecastRow"></div>
+            </div>
         </div>
     </main>
     <script src="./assets/script.js"></script>
