@@ -1,0 +1,44 @@
+:root {
+    --pri: teal;
+    --sec: lightblue;
+    --ter: purple;
+    --text: white;
+    --back: black;
+  }
+  
+  body {
+    background-color: var(--back);
+    border: 6px solid var(--pri);
+    padding: 6px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+  }
+
+  header {
+    background-color: var(--ter);
+    color: var(--text);
+    border-bottom: 10px solid var(--sec);
+  }
+
+  h3 {
+    background-color: var(--pri);
+    color: var(--text);
+    text-align: center;
+    padding: 3px;
+  }
+
+  h4 {
+    padding-left: 3px;
+    color: var(--text);
+  }
+
+  #textBox {
+    padding-left: 4px;
+    color: var(--text);
+  }
+
+  #resultsBox {
+    border: 6px solid var(--sec);
+  }
+
+
