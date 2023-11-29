@@ -18,7 +18,7 @@ function getLocation() {
   forecastRow.innerHTML = '';
 
   if (cityName !== '') {
-    var geoAPI = 'http://api.openweathermap.org/geo/1.0/direct?q=' + cityName + '&limit=1&appid=2ee7bf2ceaf4b8438eed774d0a68a53a';
+    var geoAPI = 'https://api.openweathermap.org/geo/1.0/direct?q=' + cityName + '&limit=1&appid=2ee7bf2ceaf4b8438eed774d0a68a53a';
 
     fetch(geoAPI)
       .then(function (response) {
